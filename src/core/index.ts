@@ -1,0 +1,5 @@
+import './math/index.js'
+import './shape/index.js'
+import './observable-set.js'
+import './tags.js'
+import './uri.js'

@@ -1,0 +1,1 @@
+export const ns = "playcanvas-extended::serializers"

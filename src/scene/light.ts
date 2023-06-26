@@ -1,0 +1,53 @@
+import { Application, Light } from "playcanvas-extended";
+import { serializableClassDeclarationCustom } from "simple-typed-serialization";
+
+serializableClassDeclarationCustom(
+    Light,
+    {
+        preDeserializer() {
+            return new Light(Application.getApplication()!.graphicsDevice)
+        }
+    },
+    "attenuationStart",
+    "attenuationEnd",
+    "bakeArea",
+    "bakeDir",
+    "bakeNumSamples",
+    "cascades",
+    "cascadeDistribution",
+    "castShadows",
+    "cookie",
+    "cookieChannel",
+    "cookieFalloff",
+    "cookieIntensity",
+    "cookieMatrix",
+    "cookieOffset",
+    "cookieTransform",
+    "enabled",
+    "falloffMode",
+    "id",
+    "innerConeAngle",
+    "intensity",
+    "isStatic",
+    "key",
+    "luminance",
+    "mask",
+    "maxScreenSize",
+    "normalOffsetBias",
+    "numCascades",
+    "numShadowFaces",
+    "outerConeAngle",
+    "shadowBias",
+    "shadowDistance",
+    "shadowIntensity",
+    "shadowMap",
+    "shadowResolution",
+    "shadowType",
+    "shadowUpdateMode",
+    "shape",
+    "type",
+    "usePhysicalUnits",
+    "vsmBias",
+    "vsmBlurMode",
+    "vsmBlurSize",
+)
